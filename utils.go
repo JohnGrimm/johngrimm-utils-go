@@ -207,7 +207,7 @@ func GenDados() (gjson.Result, error) {
 func GenDadosRnd(country string) (gjson.Result, error) {
 
 	client := &http.Client{
-		Timeout: time.Duration(10) * time.Second,
+		Timeout: time.Duration(30) * time.Second,
 	}
 
 	ip := GenIp()
